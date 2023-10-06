@@ -1,6 +1,3 @@
-Certainly, here's a comprehensive `README.md` file for HomeDapp using Markdown formatting:
-
-```markdown
 # HomeDapp
 
 ![HomeDapp Logo](images/homedapp-logo.png)
@@ -112,6 +109,4 @@ For inquiries or feedback, please contact us:
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-```
 
-Make sure to replace the placeholders with actual content, such as the HomeDapp logo, GitHub repository URL, and team members' details. This README provides a clear and organized overview of HomeDapp's purpose, features, and how to get started.
