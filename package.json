@@ -1,29 +1,16 @@
 {
-  "name": "client",
-  "version": "0.1.0",
-  "private": true,
+  "name": "hardhat-javascript-starter",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "export": "next export",
-    "deploy": "next build && next export && npx thirdweb@latest upload out"
-  },
-  "dependencies": {
-    "@thirdweb-dev/react": "^3",
-    "@thirdweb-dev/sdk": "^3",
-    "ethers": "^5",
-    "framer-motion": "^10.16.4",
-    "next": "^13",
-    "react": "^18.2",
-    "react-dom": "^18.2"
+    "build": "npx thirdweb@latest detect",
+    "deploy": "npx thirdweb@latest deploy",
+    "release": "npx thirdweb@latest release"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.16",
-    "eslint": "8.11.0",
-    "eslint-config-next": "^13",
-    "postcss": "^8.4.30",
-    "tailwindcss": "^3.3.3"
+    "@matterlabs/hardhat-zksync-solc": "^0.3.17",
+    "hardhat": "^2.13.0"
+  },
+  "dependencies": {
+    "@thirdweb-dev/contracts": "^3.8.0",
+    "zksync-web3": "^0.14.3"
   }
 }
