@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Script from 'next/script';
 import { useContract } from '@thirdweb-dev/react';
+import { formatUnits } from 'ethers/lib/utils';
 
 const hello = [];
 
@@ -28,11 +29,17 @@ export default function Home({ contract }) {
   const dataArray = [];
 
   const fetchMultipleData = async () => {
-    const numbersToFetch = [2,3]; // Replace with your desired numbers
+    // const numbersToFetch = []; // Replace with your desired numbers
+    const datam = await contract.call("totalSupply", [])
+    const newData = Number(formatUnits(datam, 0))
+    console.log(datam, "the new data is : ", newData);
+    const numbersToFetch = [];
+    for(let i = 1 ; i < newData ; i++){
+      await numbersToFetch.push(i);
+    }
 
     for (const number of numbersToFetch) {
       const data = await contract.call("getHomeDetails", [number]);
-
       dataArray.push(data);
       hello.push(data);
     }
