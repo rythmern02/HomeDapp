@@ -3,44 +3,37 @@
 Create a project using this example:
 
 ```bash
-npx thirdweb create --contract --template hardhat-javascript-starter
+npx thirdweb create --template next-javascript-starter
 ```
 
-You can start editing the page by modifying `contracts/Contract.sol`.
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-To add functionality to your contracts, you can use the `@thirdweb-dev/contracts` package which provides base contracts and extensions to inherit. The package is already installed with this project. Head to our [Contracts Extensions Docs](https://portal.thirdweb.com/contractkit) to learn more.
+On `pages/_app.js`, you'll find our `ThirdwebProvider` wrapping your app, this is necessary for our [hooks](https://portal.thirdweb.com/react) and
+[UI Components](https://portal.thirdweb.com/ui-components) to work.
 
-## Building the project
+## Environment Variables
 
-After any changes to the contract, run:
+To run this project, you will need to add environment variables. Check the `.env.example` file for all the environment variables required and add it to `.env.local` file or set them up on your hosting provider.
 
-```bash
-npm run build
-# or
-yarn build
-```
+## Deploy to IPFS
 
-to compile your contracts. This will also detect the [Contracts Extensions Docs](https://portal.thirdweb.com/contractkit) detected on your contract.
-
-## Deploying Contracts
-
-When you're ready to deploy your contracts, just run one of the following command to deploy you're contracts:
+Deploy a copy of your application to IPFS using the following command:
 
 ```bash
-npm run deploy
-# or
 yarn deploy
 ```
 
-## Releasing Contracts
+## Learn More
 
-If you want to release a version of your contracts publicly, you can use one of the followings command:
+To learn more about thirdweb and Next.js, take a look at the following resources:
 
-```bash
-npm run release
-# or
-yarn release
-```
+- [thirdweb React Documentation](https://docs.thirdweb.com/react) - learn about our React SDK.
+- [thirdweb JavaScript Documentation](https://docs.thirdweb.com/react) - learn about our JavaScript/TypeScript SDK.
+- [thirdweb Portal](https://docs.thirdweb.com/react) - check our guides and development resources.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Templates](https://thirdweb.com/templates)
+
+You can check out [the thirdweb GitHub organization](https://github.com/thirdweb-dev) - your feedback and contributions are welcome!
 
 ## Join our Discord!
 
