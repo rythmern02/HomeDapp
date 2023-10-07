@@ -1,6 +1,6 @@
 # HomeDapp
 
-![HomeDapp Logo](images/homedapp-logo.png)
+![HomeDapp Logo](![white](https://github.com/rythmern02/HomeDapp/assets/117756525/7abeb134-8809-45b1-9659-8d7419ebb4d1)
 
 Welcome to HomeDapp, the revolutionary decentralized application (DApp) for property registration and real estate transactions on the Ethereum blockchain.
 
