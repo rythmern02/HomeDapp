@@ -48,7 +48,7 @@ Before you start using HomeDapp, make sure you have the following prerequisites:
 1. Clone the HomeDapp repository:
 
    ```bash
-   git clone https://github.com/yourusername/homedapp.git
+   git clone https://github.com/rythmern02/homedapp.git
    ```
 
 2. Change to the project directory:
